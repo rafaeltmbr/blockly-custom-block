@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockly Custom Blocks</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <button id="run-button">Run</button>
+    <div id="blocklyDiv"></div>
+
+    <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox">
+      <category name="Text" colour="%{BKY_TEXTS_HUE}">
+        <block type="text"></block>
+        <block type="output_console"></block>
+      </category>
+      <category name="Math" colour="%{BKY_MATH_HUE}">
+        <block type="math_number"></block>
+      </category>
+    </xml>
+
+    <xml xmlns="https://developers.google.com/blockly/xml" id="startBlocks" style="display: none">
+      <block type="output_console" inline="false">
+        <value name="value">
+          <block type="text">
+            <field name="TEXT">Hello world</field>
+          </block>
+        </value>
+      </block>
+    </xml>
+
+    <script src="./blockly/blockly_compressed.js"></script>
+    <script src="./blockly/blocks_compressed.js"></script>
+    <script src="./blockly/javascript_compressed.js"></script>
+    <script src="./blockly/msg/js/en.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
