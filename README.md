@@ -7,6 +7,6 @@ This repository shows an example of how to use your [custom block](https://devel
 
 ## Live demo
 
-A live demo can be found at https://rafaeltmbr.github.io/blockly-get-started
+A live demo can be found at https://rafaeltmbr.github.io/blockly-custom-block/
 
 ![Blockly Get Started live demo image](./assets/img/blockly-custom-block-example.png "Live demo")
